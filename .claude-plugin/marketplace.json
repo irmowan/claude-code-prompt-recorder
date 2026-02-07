@@ -15,7 +15,7 @@
         "repo": "irmowan/claude-code-prompt-recorder"
       },
       "description": "Records every user prompt with a timestamp to .claude/prompt_log.txt",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "irmowan"
       },

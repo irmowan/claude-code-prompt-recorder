@@ -1,7 +1,7 @@
 {
   "name": "prompt-recorder",
   "description": "Records each user prompt with a timestamp to a prompt_log.txt file in the project directory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "irmowan"
   }
