@@ -1,10 +1,10 @@
 # Claude Code Prompt Recorder
 
-A UserPromptSubmit hook plugin that records every user prompt with a timestamp to `prompt_log.txt` in the project directory.
+A UserPromptSubmit hook plugin that records every user prompt with a timestamp to `.claude/prompt_log.txt` in the project directory.
 
 **Core functionality:**
 - Intercepts prompts via UserPromptSubmit hook
-- Records timestamp + prompt text to `prompt_log.txt`
+- Records timestamp + prompt text to `.claude/prompt_log.txt`
 - Pass-through only — does not modify prompts
 - Skips empty prompts
 
@@ -17,7 +17,7 @@ A UserPromptSubmit hook plugin that records every user prompt with a timestamp t
 
 **Script (scripts/record-prompt.py):**
 - Reads JSON from stdin (`user_prompt`, `cwd`, `session_id`)
-- Appends `[YYYY-MM-DD HH:MM:SS] <prompt>` to `<cwd>/prompt_log.txt`
+- Appends `[YYYY-MM-DD HH:MM:SS] <prompt>` to `<cwd>/.claude/prompt_log.txt`
 - Outputs pass-through JSON with empty `hookSpecificOutput`
 
 **Directory structure:**
@@ -42,4 +42,4 @@ A UserPromptSubmit hook plugin that records every user prompt with a timestamp t
 **Log format:**
 - One line per prompt: `[YYYY-MM-DD HH:MM:SS] <prompt text>`
 - UTF-8 encoding, append mode
-- File: `prompt_log.txt` in working directory
+- File: `.claude/prompt_log.txt` in working directory (directory created if missing)

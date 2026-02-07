@@ -15,42 +15,29 @@ Intercepts every prompt submitted to Claude Code via the `UserPromptSubmit` hook
 
 ## Installation
 
-### Option 1: Plugin Install
+### Option 1: Via Marketplace (Recommended)
+
+1. Add the marketplace:
+```bash
+claude plugin marketplace add irmowan/claude-code-prompt-recorder
+```
+
+2. Install the plugin:
+```bash
+claude plugin install prompt-recorder@irmowan-marketplace
+```
+
+3. Restart Claude Code
+
+Verify installation with `/plugin` command. You should see the `prompt-recorder` plugin listed.
+
+### Option 2: Direct Install
 
 ```bash
 claude plugin install /path/to/claude-code-prompt-recorder
 ```
 
 Then restart Claude Code.
-
-### Option 2: Manual Installation
-
-**1. Copy the hook script:**
-```bash
-cp scripts/record-prompt.py ~/.claude/hooks/
-```
-
-**2. Update `~/.claude/settings.json`:**
-```json
-{
-  "hooks": {
-    "UserPromptSubmit": [
-      {
-        "matcher": "*",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python ~/.claude/hooks/record-prompt.py",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  }
-}
-```
-
-**3. Restart Claude Code.**
 
 ## Usage
 

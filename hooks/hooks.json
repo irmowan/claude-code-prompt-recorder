@@ -2,7 +2,6 @@
   "hooks": {
     "UserPromptSubmit": [
       {
-        "matcher": "*",
         "description": "Record all user prompts",
         "hooks": [
           {
