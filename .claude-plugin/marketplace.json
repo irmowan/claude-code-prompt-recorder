@@ -1,0 +1,29 @@
+{
+  "name": "irmowan-marketplace",
+  "owner": {
+    "name": "irmowan",
+    "email": "irmowan@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code plugins by irmowan"
+  },
+  "plugins": [
+    {
+      "name": "prompt-recorder",
+      "source": {
+        "source": "github",
+        "repo": "irmowan/claude-code-prompt-recorder"
+      },
+      "description": "Records every user prompt with a timestamp to .claude/prompt_log.txt",
+      "version": "1.0.0",
+      "author": {
+        "name": "irmowan"
+      },
+      "homepage": "https://github.com/irmowan/claude-code-prompt-recorder",
+      "repository": "https://github.com/irmowan/claude-code-prompt-recorder",
+      "license": "MIT",
+      "keywords": ["logging", "prompt", "hook", "recorder"],
+      "category": "utilities"
+    }
+  ]
+}
