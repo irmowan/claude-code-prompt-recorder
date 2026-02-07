@@ -24,7 +24,7 @@ claude plugin marketplace add irmowan/claude-code-prompt-recorder
 
 2. Install the plugin:
 ```bash
-claude plugin install prompt-recorder@irmowan-marketplace
+claude plugin install prompt-recorder@claude-code-prompt-recorder
 ```
 
 3. Restart Claude Code

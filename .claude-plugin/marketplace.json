@@ -1,11 +1,11 @@
 {
-  "name": "irmowan-marketplace",
+  "name": "claude-code-prompt-recorder",
   "owner": {
     "name": "irmowan",
     "email": "irmowan@gmail.com"
   },
   "metadata": {
-    "description": "Claude Code plugins by irmowan"
+    "description": "Claude Code plugins with automatic recording of user prompts"
   },
   "plugins": [
     {
